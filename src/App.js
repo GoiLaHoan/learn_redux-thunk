@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import ProductListing from "./components/ProductListing";
 import "./App.css";
 import ProductDetails from "./components/ProductDetails";
+import Page404 from "./components/Page404";
 function App() {
     return (
         <div className="App">
@@ -16,9 +17,7 @@ function App() {
                         component={ProductDetails}
                     />
 
-                    <Route path="*" exact={true}>
-                        404 Not Found!
-                    </Route>
+                    <Route path="*" exact={true} component={Page404}></Route>
                 </Switch>
             </Router>
         </div>
