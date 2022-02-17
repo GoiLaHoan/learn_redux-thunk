@@ -9,11 +9,7 @@ const ProductListing = () => {
     useEffect(() => {
         dispatch(fetchProducts());
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
-    return (
-        <div className="ui grid container">
-            <ProductComponent />
-        </div>
-    );
+    return <ProductComponent />;
 };
 
 export default ProductListing;
